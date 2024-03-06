@@ -1,0 +1,8 @@
+
+    <mat-form-field>
+        <mat-label>Ingresa el acronimo</mat-label>
+      <input  type="text" [(ngModel)]="searchTerm" (keyup)="onEnter($event)" matInput placeholder="">
+    </mat-form-field>
+    <button mat-raised-button color="primary"(click)="handleSearch()" >Buscar</button>
+
+    

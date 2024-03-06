@@ -1,0 +1,21 @@
+<app-search (searchEvent)="handleSearch($event)"></app-search>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Acronimo</th>
+        <th scope="col">Significado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let acronimo of acronimos">
+        <th scope="row">{{acronimo.id}}</th>
+        <td>{{acronimo.inicial}}</td>
+        <td>{{acronimo.significados}}</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  

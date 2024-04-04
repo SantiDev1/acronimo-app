@@ -32,7 +32,7 @@ ngOnInit(): void {
       
       const significados = lfs.map((item: { lf: any; }) => item.lf);
   
-      axios.post("http://localhost:3001/create", {
+      axios.post("http://localhost:3001/api/create", {
         inicial: sf, 
         significado: JSON.stringify(significados)
       }).then(() => {

@@ -8,9 +8,9 @@ import { ListadoAcronimo } from '../models/ListadoAcronimo.interface';
 })
 export class ApiService {
 
-  apiUrl = 'http://localhost:3001/api';
+  apiUrl = 'http://localhost:3001/api/apiacronimo';
 
-  GetUrl= 'http://localhost:3001/getdata'
+  GetUrl= 'http://localhost:3001/api/getdata'
 
   constructor() { }
 
